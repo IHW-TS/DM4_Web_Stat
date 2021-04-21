@@ -1,0 +1,159 @@
+/* CSS initial */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: 0px;
+}
+/*
+.item-conteneur:nth-child(1) {
+  background: red;
+}
+
+.item-conteneur:nth-child(2) {
+  background: blue;
+}
+
+.conteneur {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+
+.item-conteneur {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+.conteneur {
+  width: 80%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.flex-item {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid;
+  border-radius: .25rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+/* Diminution largeur des blocs */
+
+.item-conteneur {
+  max-width: min-content;
+}
+
+/* Flex */
+
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.column {
+  flex-direction: column;
+}
+.column-reverse {
+  flex-direction: column-reverse;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Justify-content */
+
+.justify-content-fs {
+  justify-content: flex-start;
+}
+.justify-content-fe {
+  justify-content: flex-end;
+}
+.justify-content-c {
+  justify-content: center;
+}
+.justify-content-sa {
+  justify-content: space-around;
+}
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+/* Align-items */
+
+.align-items-fs {
+  align-items: flex-start;
+}
+.align-items-b {
+  align-items: baseline;
+}
+.align-items-c {
+  align-items: center;
+}
+.align-items-fe {
+  align-items: flex-end;
+}
+.align-items-s {
+  align-items: stretch;
+}
+
+/* Conteneur */
+
+.conteneur-rempli > .item-conteneur {
+  flex: 1;
+}
+.conteneur-plein > .item-conteneur {
+  flex: 0 0 100%;
+}
+.conteneur-1sur2 > .item-conteneur {
+  flex: 0 0 50%;
+}
+.conteneur-1sur3 > .item-conteneur {
+  flex: 0 0 33.3333%;
+}
+.conteneur-1sur4 > .item-conteneur {
+  flex: 0 0 25%;
+}
